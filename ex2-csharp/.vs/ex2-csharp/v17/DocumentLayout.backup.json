@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\programming\\csharp-ex2\\Ex02_csharp\\ex2-csharp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E508347F-AA7C-43FC-AFE7-6063C778D25F}|ex2-csharp\\ex2-csharp.csproj|c:\\programming\\csharp-ex2\\ex02_csharp\\ex2-csharp\\ex2-csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E508347F-AA7C-43FC-AFE7-6063C778D25F}|ex2-csharp\\ex2-csharp.csproj|solutionrelative:ex2-csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\programming\\csharp-ex2\\Ex02_csharp\\ex2-csharp\\ex2-csharp\\Program.cs",
+              "RelativeDocumentMoniker": "ex2-csharp\\Program.cs",
+              "ToolTip": "C:\\programming\\csharp-ex2\\Ex02_csharp\\ex2-csharp\\ex2-csharp\\Program.cs*",
+              "RelativeToolTip": "ex2-csharp\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T10:05:27.225Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
