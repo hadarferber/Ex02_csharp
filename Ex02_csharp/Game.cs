@@ -116,11 +116,13 @@ namespace Ex02_csharp
             m_currentNumberOfGuesses++;
         }
 
-
-
-
-
-
+        public void getResults(out int hit, out int miss)
+        {
+            hit = m_ResultOfSequence.m_RightPositionAndLetter;
+            miss = m_ResultOfSequence.m_NotInTheRightPosition;
+        }
 
     }
+
+
 }
