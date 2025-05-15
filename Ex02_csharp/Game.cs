@@ -8,17 +8,23 @@ using System.Threading.Tasks;
 
 namespace Ex02_csharp
 {
-    internal class Game
+    public class Game
     {
         public const int k_LengthOfSequence = 4;
         public const int k_MinNumberOfGuesses = 4;
         public const int k_MaxNumberOfGuesses = 10;
 
-        private struct ResultOfSequenceFromUser
+        public struct ResultOfSequenceFromUser
         {
             public int m_NotInTheRightPosition;
             public int m_RightPositionAndLetter;
 
+        }
+
+        public struct GuessAndResult
+        {
+            public ResultOfSequenceFromUser m_ResultOfGuess;
+            public string m_Guess;
         }
 
         public enum eValidInputLetters
@@ -28,10 +34,13 @@ namespace Ex02_csharp
 
         private string m_ChosenSequence; //the sequece of letters that the computer chose
         private int m_MaxNumberOfGuesses;
-        private ResultOfSequenceFromUser m_ResultOfSequence;
-        private int m_currentNumberOfGuesses = 0;
+        private List<GuessAndResult> m_GuessesAndResultsHistory;//list of history
 
-        
+
+        public List<GuessAndResult> GuessesAndResultsHistory
+        {
+            get {return m_GuessesAndResultsHistory; }
+        }
 
         public int MaxNumberOfGuesses
         {
@@ -74,16 +83,16 @@ namespace Ex02_csharp
            
             m_MaxNumberOfGuesses = i_ChosenNumberOfGuesses;
             generateSequence();
-        
+            m_GuessesAndResultsHistory = new List<GuessAndResult>();
         }
 
-        public void updateResultOfSequence(string i_SequenceFromUser)
+        public void UpdateResultOfSequence(string i_SequenceFromUser)
         {
             int numberOfCorrectPositionLetters = 0;
             int numberOfWrongPositionLetters = 0;
-
             bool[] matchedInTheChosenSequence = new bool[k_LengthOfSequence];
             bool[] matchedInTheUserSequence = new bool[k_LengthOfSequence];
+            GuessAndResult currentGuessAndResult;
 
             for (int i = 0; i < k_LengthOfSequence; i++)
             {
@@ -110,17 +119,16 @@ namespace Ex02_csharp
                 }
             }
 
-            m_ResultOfSequence.m_RightPositionAndLetter = numberOfCorrectPositionLetters;
-            m_ResultOfSequence.m_NotInTheRightPosition = numberOfWrongPositionLetters;
-
-            m_currentNumberOfGuesses++;
+            currentGuessAndResult.m_Guess = i_SequenceFromUser;
+            currentGuessAndResult.m_ResultOfGuess.m_RightPositionAndLetter = numberOfCorrectPositionLetters;
+            currentGuessAndResult.m_ResultOfGuess.m_NotInTheRightPosition = numberOfWrongPositionLetters;
+            m_GuessesAndResultsHistory.Add(currentGuessAndResult);//adding this guess and result to the list
+           
         }
 
-        public void getResults(out int hit, out int miss)
-        {
-            hit = m_ResultOfSequence.m_RightPositionAndLetter;
-            miss = m_ResultOfSequence.m_NotInTheRightPosition;
-        }
+   
+
+       
 
     }
 

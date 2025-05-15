@@ -10,57 +10,51 @@ namespace Ex02_csharp
     public class Program
     {
         static void Main()
+        {
+            Program program = new Program();
 
+            program.startGame();    
+
+
+        }
+
+        private void startGame()
         {
             Display display = new Display();
 
-            bool isPlaying = true;
-            int hit = 0;
-            int miss = 0;
+            bool isTheUserCurrentlyPlaying = true;
 
-            while (isPlaying)
+            while (isTheUserCurrentlyPlaying)
             {
                 bool won = false;
                 Screen.Clear();
 
-                int numberOfGuesses = display.getNumberOfGuessesFromUser();
+                Game game = new Game(display.GetNumberOfGuessesFromUser());
 
-                Game game = new Game(numberOfGuesses);
-                List<string> guesses = new List<string>();
-                List<string> results = new List<string>();
-                const int k_LengthOfSequence = Game.k_LengthOfSequence;
-
-                while (guesses.Count < numberOfGuesses)
+                while (game.GuessesAndResultsHistory.Count < game.MaxNumberOfGuesses) //current guesses are less than the max
                 {
-                    Screen.Clear();
-                    display.printScreen(numberOfGuesses, guesses, results);
-                    string newGuess = display.getGuessFromUser(k_LengthOfSequence);
+                    display.PrintScreen(game);
+                    string newGuess = display.GetGuessFromUser(Game.k_LengthOfSequence);
                     if (newGuess == "Q")
                     {
-                        Console.WriteLine("Bye");
+                        Console.WriteLine("Goodbye!");
                         return;
                     }
 
-                    game.updateResultOfSequence(newGuess);
+                    game.UpdateResultOfSequence(newGuess);
 
-                    game.getResults(out hit, out miss);
-
-                    guesses.Add(newGuess);
-                    results.Add(new string('V', hit) + new string('X', miss));
-
-                    if (hit == k_LengthOfSequence)
+                    if (game.GuessesAndResultsHistory.Last().m_ResultOfGuess.m_RightPositionAndLetter == Game.k_LengthOfSequence) //player has won
                     {
                         won = true;
                         break;
                     }
                 }
 
-                Screen.Clear();
-                display.printScreen(numberOfGuesses, guesses, results);
+                display.PrintScreen(game);
 
                 if (won)
                 {
-                    Console.WriteLine("you guessed right yay");
+                    Console.WriteLine("\nYou guessed right yay!");
                 }
                 else
                 {
@@ -68,19 +62,17 @@ namespace Ex02_csharp
                 }
 
                 Console.WriteLine("Would you like to start a new game? <Y/N>");
-                String response = Console.ReadLine();
-                if (response == "Y")
+                String responseForKeepingPlaying = Console.ReadLine();
+                if (responseForKeepingPlaying == "Y")
                 {
-                    isPlaying = true;
+                    isTheUserCurrentlyPlaying = true;
                 }
                 else
                 {
-                    isPlaying = false;
+                    isTheUserCurrentlyPlaying = false;
                 }
 
             }
-
-
         }
 
     }

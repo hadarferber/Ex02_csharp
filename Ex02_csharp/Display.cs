@@ -9,30 +9,31 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Ex02.ConsoleUtils;
+using static Ex02_csharp.Game;
 
 namespace Ex02_csharp
 {
     internal class Display
     {
 
-        public string getGuessFromUser(int k_LengthOfSequence)
+        public string GetGuessFromUser(int k_LengthOfSequence)
         {
 
             bool isValid = false;
+            string inputFromUser = "Q";
 
             while (!isValid)
             {
-                Console.WriteLine("Please type your next guess <A B C D> or Q to quit");
+                Console.WriteLine("Please type your next guess <A B C D> or 'Q' to quit");
 
                 isValid = true;
-                string inputFromUser = Console.ReadLine();
+                inputFromUser = Console.ReadLine();
                 if (inputFromUser == "Q")
                 {
-                    return "Q";
+                    break;
                 }
 
-                string[] letters = inputFromUser.Split(' ');
-                if (letters.Length != k_LengthOfSequence)
+                if (inputFromUser.Length != k_LengthOfSequence)
                 {
                     Console.WriteLine("guess length incorrect. Guess must be of length " + k_LengthOfSequence);
                     isValid = false;
@@ -40,28 +41,18 @@ namespace Ex02_csharp
                 }
 
 
-
-                for (int i = 0; i < k_LengthOfSequence; i++)
+                if (!IsValidUserSequence(inputFromUser)) //if it is not valid
                 {
-                    if (!Enum.TryParse(letters[i], out Game.eValidInputLetters letter))
-                    {
-                        isValid = false;
-                        Console.WriteLine("invalid guess: " + letters[i]);
-                            break;
-                    }
-                }
-
-                if (isValid)
-                {
-                    return string.Join("", letters);
+                    isValid = false;
                 }
 
             }
-            return "Q";
+
+            return inputFromUser;
 
         }
 
-        public int getNumberOfGuessesFromUser()
+        public int GetNumberOfGuessesFromUser()
         {
             Console.WriteLine("Enter the desired number of guesses (4-10): ");
             string inputFromUser = Console.ReadLine();
@@ -71,33 +62,39 @@ namespace Ex02_csharp
                 while (numberOfGuessesFromUser < 4 || numberOfGuessesFromUser > 10)
                 {
                     Console.WriteLine("Invalid input. Please enter a number within the range.");
-                    numberOfGuessesFromUser = getNumberOfGuessesFromUser();
+                    numberOfGuessesFromUser = GetNumberOfGuessesFromUser();
                 }
             }
             else
             {
                 Console.WriteLine("Invalid input.");
-                numberOfGuessesFromUser = getNumberOfGuessesFromUser(); // Try again
+                numberOfGuessesFromUser = GetNumberOfGuessesFromUser(); // Try again
             }
-
 
             return numberOfGuessesFromUser;
         }
 
-        public void printScreen(int numberOfGuesses, List<string> guesses, List<string> results)
+        public void PrintScreen(Game game)
         {
+            Screen.Clear();
             Console.WriteLine("Current board status");
             Console.WriteLine("|Pins:    |Results:|");
             Console.WriteLine("|=========|========|");
             Console.WriteLine("| # # # # |        |");
             Console.WriteLine("|=========|========|");
 
-            for (int i = 0; i < numberOfGuesses; i++)
+            List<GuessAndResult> history = game.GuessesAndResultsHistory;
+
+            for (int i = 0; i < game.MaxNumberOfGuesses; i++)
             {
-                if (i < guesses.Count)
+                if (i < game.GuessesAndResultsHistory.Count)
                 {
-                    string guessToPrint = string.Join(" ", guesses[i].ToList());
-                    string resultsToPrint = string.Join(" ", results[i].ToList());
+                    string resultStringOfXandV = new string('V', game.GuessesAndResultsHistory[i].m_ResultOfGuess.m_RightPositionAndLetter) 
+                        + new string('X', game.GuessesAndResultsHistory[i].m_ResultOfGuess.m_NotInTheRightPosition)
+                        + new string(' ', Game.k_LengthOfSequence - game.GuessesAndResultsHistory[i].m_ResultOfGuess.m_RightPositionAndLetter - game.GuessesAndResultsHistory[i].m_ResultOfGuess.m_NotInTheRightPosition);
+
+                    string guessToPrint = string.Join(" ", game.GuessesAndResultsHistory[i].m_Guess.ToList());
+                    string resultsToPrint = string.Join(" ", resultStringOfXandV.ToList());
                     Console.WriteLine($"| {guessToPrint} | {resultsToPrint}|");
                 }
                 else
@@ -109,6 +106,32 @@ namespace Ex02_csharp
             }
 
         }
+
+
+        public bool IsValidUserSequence(string userSequence)   //true if is good and false if bad
+        {
+            List<char> seenCharactersInTheSequence = new List<char>();
+
+            foreach (char c in userSequence)
+            {
+                // Check for duplicate
+                if (seenCharactersInTheSequence.Contains(c))
+                {
+                    return false; // Duplicate found
+                }
+
+                // Check if it's in the enum
+                if (!Enum.IsDefined(typeof(eValidInputLetters), c.ToString()))
+                {
+                    return false; // Invalid letter
+                }
+
+                seenCharactersInTheSequence.Add(c);
+            }
+
+            return true; // All letters are unique and valid
+        }
+
 
 
     }
