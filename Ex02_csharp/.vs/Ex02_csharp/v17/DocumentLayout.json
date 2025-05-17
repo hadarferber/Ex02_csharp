@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|c:\\users\\shire\\onedrive\\documents\\github\\csharp-ex2\\ex02_csharp\\ex02_csharp\\display.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|solutionrelative:display.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T20:12:57.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-12T20:57:52.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Display.cs",
+              "DocumentMoniker": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\Display.cs",
+              "RelativeDocumentMoniker": "Display.cs",
+              "ToolTip": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\Display.cs",
+              "RelativeToolTip": "Display.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAD4v0oAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T14:18:28.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\Game.cs",
+              "RelativeDocumentMoniker": "Game.cs",
+              "ToolTip": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\Game.cs",
+              "RelativeToolTip": "Game.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAYwIAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T12:05:21.404Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
