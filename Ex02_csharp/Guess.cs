@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ex02_csharp
 {
-    internal class Game
+    internal class Guess
     {
-
-
     }
 }

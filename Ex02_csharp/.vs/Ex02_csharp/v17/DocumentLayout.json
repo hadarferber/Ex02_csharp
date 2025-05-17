@@ -1,21 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\",
+  "WorkspaceRootPath": "C:\\programming\\csharp-ex2\\Ex02_csharp\\Ex02_csharp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|c:\\users\\shire\\onedrive\\documents\\github\\csharp-ex2\\ex02_csharp\\ex02_csharp\\display.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|solutionrelative:display.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|c:\\programming\\csharp-ex2\\ex02_csharp\\ex02_csharp\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|c:\\programming\\csharp-ex2\\ex02_csharp\\ex02_csharp\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|solutionrelative:gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|c:\\programming\\csharp-ex2\\ex02_csharp\\ex02_csharp\\guess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|solutionrelative:guess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|c:\\programming\\csharp-ex2\\ex02_csharp\\ex02_csharp\\display.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|solutionrelative:display.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|C:\\programming\\csharp-ex2\\Ex02_csharp\\Ex02_csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|C:\\programming\\csharp-ex2\\Ex02_csharp\\Ex02_csharp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{98E72103-D48C-4616-9587-37FB7148098B}|Ex02_csharp.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
@@ -26,43 +34,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Guess.cs",
+              "DocumentMoniker": "C:\\programming\\csharp-ex2\\Ex02_csharp\\Ex02_csharp\\Guess.cs",
+              "RelativeDocumentMoniker": "Guess.cs",
+              "ToolTip": "C:\\programming\\csharp-ex2\\Ex02_csharp\\Ex02_csharp\\Guess.cs",
+              "RelativeToolTip": "Guess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T09:48:33.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\programming\\csharp-ex2\\Ex02_csharp\\Ex02_csharp\\Game.cs",
+              "RelativeDocumentMoniker": "Game.cs",
+              "ToolTip": "C:\\programming\\csharp-ex2\\Ex02_csharp\\Ex02_csharp\\Game.cs",
+              "RelativeToolTip": "Game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T09:47:42.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\Program.cs",
+              "DocumentMoniker": "C:\\programming\\csharp-ex2\\Ex02_csharp\\Ex02_csharp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\Program.cs",
+              "ToolTip": "C:\\programming\\csharp-ex2\\Ex02_csharp\\Ex02_csharp\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T20:12:57.972Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\App.config",
+              "DocumentMoniker": "C:\\programming\\csharp-ex2\\Ex02_csharp\\Ex02_csharp\\App.config",
               "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\App.config",
+              "ToolTip": "C:\\programming\\csharp-ex2\\Ex02_csharp\\Ex02_csharp\\App.config",
               "RelativeToolTip": "App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-05-12T20:57:52.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Display.cs",
-              "DocumentMoniker": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\Display.cs",
+              "DocumentMoniker": "C:\\programming\\csharp-ex2\\Ex02_csharp\\Ex02_csharp\\Display.cs",
               "RelativeDocumentMoniker": "Display.cs",
-              "ToolTip": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\Display.cs",
+              "ToolTip": "C:\\programming\\csharp-ex2\\Ex02_csharp\\Ex02_csharp\\Display.cs",
               "RelativeToolTip": "Display.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAD4v0oAAAAJAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T14:18:28.794Z",
               "EditorCaption": ""
@@ -70,12 +104,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\Game.cs",
-              "RelativeDocumentMoniker": "Game.cs",
-              "ToolTip": "C:\\Users\\shire\\OneDrive\\Documents\\GitHub\\Csharp-Ex2\\Ex02_csharp\\Ex02_csharp\\Game.cs",
-              "RelativeToolTip": "Game.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAYwIAAAAADAAAA",
+              "Title": "GameLogic.cs",
+              "DocumentMoniker": "C:\\programming\\csharp-ex2\\Ex02_csharp\\Ex02_csharp\\GameLogic.cs",
+              "RelativeDocumentMoniker": "GameLogic.cs",
+              "ToolTip": "C:\\programming\\csharp-ex2\\Ex02_csharp\\Ex02_csharp\\GameLogic.cs",
+              "RelativeToolTip": "GameLogic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T12:05:21.404Z",
               "EditorCaption": ""

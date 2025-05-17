@@ -13,8 +13,9 @@ namespace Ex02_csharp
         {
             Program program = new Program();
 
-            program.startGame();    
+            program.startGame();
 
+            //Game game = new Game();
 
         }
 
@@ -29,12 +30,12 @@ namespace Ex02_csharp
                 bool won = false;
                 Screen.Clear();
 
-                Game game = new Game(display.GetNumberOfGuessesFromUser());
+                GameLogic game = new GameLogic(display.GetNumberOfGuessesFromUser());
 
                 while (game.GuessesAndResultsHistory.Count < game.MaxNumberOfGuesses) //current guesses are less than the max
                 {
                     display.PrintScreen(game);
-                    string newGuess = display.GetGuessFromUser(Game.k_LengthOfSequence);
+                    string newGuess = display.GetGuessFromUser(GameLogic.k_LengthOfSequence);
                     if (newGuess == "Q")
                     {
                         Console.WriteLine("Goodbye!");
@@ -43,7 +44,7 @@ namespace Ex02_csharp
 
                     game.UpdateResultOfSequence(newGuess);
 
-                    if (game.GuessesAndResultsHistory.Last().m_ResultOfGuess.m_RightPositionAndLetter == Game.k_LengthOfSequence) //player has won
+                    if (game.GuessesAndResultsHistory.Last().m_ResultOfGuess.m_RightPositionAndLetter == GameLogic.k_LengthOfSequence) //player has won
                     {
                         won = true;
                         break;

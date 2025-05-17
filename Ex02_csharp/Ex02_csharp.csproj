@@ -36,9 +36,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Game.cs" />
+    <Compile Include="Guess.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Display.cs" />
-    <Compile Include="Game.cs" />
+    <Compile Include="GameLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Ex02.ConsoleUtils">

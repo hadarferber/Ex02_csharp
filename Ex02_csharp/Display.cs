@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Ex02.ConsoleUtils;
-using static Ex02_csharp.Game;
+using static Ex02_csharp.GameLogic;
 
 namespace Ex02_csharp
 {
@@ -74,13 +74,21 @@ namespace Ex02_csharp
             return numberOfGuessesFromUser;
         }
 
-        public void PrintScreen(Game game)
+        public void PrintScreen(GameLogic game)
         {
             Screen.Clear();
             Console.WriteLine("Current board status");
             Console.WriteLine("|Pins:    |Results:|");
             Console.WriteLine("|=========|========|");
-            Console.WriteLine("| # # # # |        |");
+            if (game.GuessesAndResultsHistory.Count == game.MaxNumberOfGuesses)
+            {
+                string computerGuessToPrint = string.Join(" ", game.ChosenSequence.ToList());
+                Console.WriteLine($"| {computerGuessToPrint} |        |");
+            }
+            else
+            {
+                Console.WriteLine("| # # # # |        |");
+            }
             Console.WriteLine("|=========|========|");
 
             List<GuessAndResult> history = game.GuessesAndResultsHistory;
@@ -91,7 +99,7 @@ namespace Ex02_csharp
                 {
                     string resultStringOfXandV = new string('V', game.GuessesAndResultsHistory[i].m_ResultOfGuess.m_RightPositionAndLetter) 
                         + new string('X', game.GuessesAndResultsHistory[i].m_ResultOfGuess.m_NotInTheRightPosition)
-                        + new string(' ', Game.k_LengthOfSequence - game.GuessesAndResultsHistory[i].m_ResultOfGuess.m_RightPositionAndLetter - game.GuessesAndResultsHistory[i].m_ResultOfGuess.m_NotInTheRightPosition);
+                        + new string(' ', GameLogic.k_LengthOfSequence - game.GuessesAndResultsHistory[i].m_ResultOfGuess.m_RightPositionAndLetter - game.GuessesAndResultsHistory[i].m_ResultOfGuess.m_NotInTheRightPosition);
 
                     string guessToPrint = string.Join(" ", game.GuessesAndResultsHistory[i].m_Guess.ToList());
                     string resultsToPrint = string.Join(" ", resultStringOfXandV.ToList());
@@ -117,12 +125,15 @@ namespace Ex02_csharp
                 // Check for duplicate
                 if (seenCharactersInTheSequence.Contains(c))
                 {
+                    Console.WriteLine("Duplicate letter found, invalid guess");
                     return false; // Duplicate found
                 }
 
                 // Check if it's in the enum
                 if (!Enum.IsDefined(typeof(eValidInputLetters), c.ToString()))
                 {
+
+                    Console.WriteLine("Invalid char found, invalid guess");
                     return false; // Invalid letter
                 }
 
